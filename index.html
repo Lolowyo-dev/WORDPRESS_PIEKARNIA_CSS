@@ -1,0 +1,453 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Funkcje PHP</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.7.0/styles/night-owl.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.7.0/highlight.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.7.0/languages/go.min.js"></script>
+    <link rel="stylesheet" href="style.css">
+<body>
+    <h1>Piekarnia - CSS</h1>
+    <pre>
+        <code>
+
+body {
+    background-color: #FFFFFF;
+    color: #000000;
+    font-family: &quot;Open Sans&quot;;
+    font-weight: 400;
+    font-weight: 400;
+    font-size: 13px;
+    line-height: 1.1875;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+}
+
+
+
+#logo&gt;div{
+    margin-left: 20px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    width: 40px;
+    height: 40px;
+    background-color: transparent;
+    background-image: url(../images/logo1.png);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: contain;
+    
+    transition: background-image 500ms linear 0ms, color 500ms linear 0ms;
+}
+
+#logo:hover&gt;div{
+    background-image: url(../images/logo2.png);
+}
+
+nav{
+    clear: both;
+    position: sticky;
+    top: 0;
+    text-align: center;
+    width: 100%;
+    background-color: rgba(255,255,255,0.78);
+    background-image: none;
+    box-sizing: border-box;
+    margin: 0;
+    flex-wrap: wrap;
+}
+
+#naw{
+    box-sizing: border-box;
+    display: flex;
+    padding: 0;
+    margin-left: auto;
+    margin-right: auto;
+    flex-direction: row;
+    flex-wrap: wrap;
+    max-width: 1140px;
+}
+
+#nawigacja{
+    display: inline-block;
+    padding-left: -5%;
+    margin-right: 10%;
+    flex-basis: 58.33333333%;
+    max-width: 58.33333333%;
+    align-self: center;
+}
+
+#nawigacja a{
+    background-color: transparent;
+    background-image: none;
+    font-family: &quot;Open Sans&quot;;
+    font-weight: normal;
+    font-size: 15px;
+    font-style: normal;
+    color: #696969;
+    text-align: left;
+    text-decoration: none;
+    padding-left: 25px;
+    transition: background-color 500ms linear 0ms, color 500ms linear 0ms;
+}
+
+#nawigacja a:hover{
+    text-shadow: 0px 0px 10px rgb(0 0 0 / 50%);
+    color: #000000;
+    font-weight: bolder;
+}
+
+.button{
+    display: flex;
+    flex-wrap: wrap;
+    align-content: center;
+    align-self: stretch;
+    align-items: center;
+    padding-right: 15px;
+    padding-left: 15px;
+}
+nav .button{
+    justify-content: right;
+}
+
+.button&gt;a{
+    display: inline-block;
+    width: 212px;
+    height: 30px;
+    background-color: #000000;
+    color: #FFFFFF;
+    transition: background-color 500ms linear 0ms, color 500ms linear 0ms;
+    box-sizing: border-box;
+    line-height: 24px;
+    text-decoration: none;
+    border: 2px solid #000000;
+    border-radius: 0px;
+    font-family: &quot;Open Sans&quot;;
+    font-size: 11px;
+    text-align: center;
+    margin: 0;
+}
+
+.button&gt;a:hover{
+    background-color: #FFFFFF;
+    color: #000000;
+}
+
+header{
+    width: 100%;
+    height: 50vh;
+    background-color: transparent;
+    background-image: url(../images/baner.jpeg);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    box-sizing: border-box;
+    margin: 0;
+    text-align: center;
+    min-height: 500px;
+    max-height: 500px;
+    overflow: hidden;
+}
+
+header #box{
+    box-sizing: border-box;
+    height: fit-content;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    padding: 100px 0 100px 0;
+    margin-right: auto;
+    margin-left: auto;
+    max-width: 1140px;
+}
+
+#naglowek{
+    flex-basis: 100%;
+    max-width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    align-content: center;
+    align-self: stretch;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    box-sizing: border-box;
+    min-height: 1px;
+    padding-right: 15px;
+    padding-left: 15px;
+    max-height: 280px;
+}
+.h1, .h2a, .h2b{
+    display: inline-block;
+    width: 100%;
+    box-sizing: border-box;
+    vertical-align: top;
+    margin: 0 0 25px 0;
+    text-align: center;
+}
+.h1 h1{
+    color: #FFFFFF;
+    font-family: &quot;Open Sans&quot;;
+    font-weight: 700;
+    font-style: normal;
+    font-size: 48px;
+    margin: 0;
+    text-align: center;
+    -webkit-text-stroke: 1px #000000;
+    text-shadow: 0px 0px 10px rgb(0 0 0 / 50%);
+}
+
+.h2a&gt;h2 , .h2b&gt;h2{
+    color: #FFFFFF;
+    font-family: &quot;Open Sans&quot;;
+    font-weight: bold;
+    font-style: normal;
+    font-size: 24px;
+    margin: 0;
+    text-align: center;
+    -webkit-text-stroke: 1px #000000;
+    text-shadow: 0px 0px 8px rgb(0 0 0 / 50%);
+}
+
+
+.h2a{
+    margin: 0 0 50px 0;
+}
+.h2b{
+    margin:50px 0 0  0;
+}
+
+#naglowek a{
+    width: 125px;
+    height: 40px;
+    box-sizing: border-box;
+    line-height: 34px;
+    text-decoration: none;
+    vertical-align: top;
+    border: 2px solid #FFFFFF;
+    border-radius: 0px;
+    background-color: rgba(0,0,0,0.50);
+    background-image: none;
+    color: #FFFFFF;
+    font-family: &quot;Open Sans&quot;;
+    font-weight: normal;
+    font-style: normal;
+    font-size: 13px;
+    padding: 1px 6px 1px 6px;
+    text-align: center;
+    margin: 0 10px 0 0;
+    transition: background-color 500ms linear 0ms, color 500ms linear 0ms;
+}
+
+#naglowek a:hover{
+    background-color: rgba(0,0,0,0.95);
+    font-weight: bold;
+    text-shadow: 0px 0px 10px rgba(255, 255, 255, 0.5);
+}
+
+#opis{
+    box-sizing: border-box;
+    padding: 50px 20% 50px 20%;
+    margin-right: auto;
+    margin-left: auto;
+    max-width: 1140px;
+    text-align: center;
+    color: #000000;
+    font-family: 'Open Sans';
+    font-size: 17px;
+    line-height: 22px;
+}
+
+table#wypieki{
+    max-width: 100%;
+    padding-top: 5%;
+    width: 1100px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+table#wypieki th{
+    margin: 20px 0 20px 0;
+    padding: 0;
+    color: #292B2C;
+    font-family: &quot;Open Sans&quot;;
+    font-weight: 700;
+    font-style: normal;
+    font-size: 19px;
+}
+
+table#wypieki td{
+    padding: 15px;
+    width: 33%;
+}
+
+table#wypieki tr.text td{
+    margin: 20px 0 0 0;
+    padding: 0 15px;
+    color: #292B2C;
+    font-family: &quot;Open Sans&quot;;
+    font-weight: normal;
+    font-style: normal;
+    font-size: 13px;
+    text-align: center;
+    width: 33%;
+}
+
+table#wypieki td img{
+    width: 100%;
+    overflow: hidden;
+}
+
+#about{
+    width: 100%;
+    background-color: transparent;
+    background-image: url(../images/baner-about.jpeg);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    box-sizing: border-box;
+    margin: 5% 0;
+    text-align: center;
+    min-height: 400px;
+    overflow: hidden;
+}
+
+#about h2{
+    color: #FFFFFF;
+    font-family: &quot;Open Sans&quot;;
+    font-weight: 700;
+    font-style: normal;
+    font-size: 48px;
+    margin: 0;
+    text-align: center;
+    -webkit-text-stroke: 1px #000000;
+    text-shadow: 0px 0px 10px rgb(0 0 0 / 50%);
+
+}
+
+#about&gt;.about-box{
+    padding: 100px 15px 100px 15px;
+    margin-right: auto;
+    margin-left: auto;
+    max-width: 1140px;
+}
+.about-box&gt;div#o-nas{
+    color: #FFFFFF;
+    font-family: 'Open Sans';
+    font-size: 17px;
+    text-align: center;
+    margin: 15px;
+    padding: 40px 20%;
+    background-color: rgba(0,0,0,0.50);
+}
+
+
+#about .button a{
+    background-color: rgba(0,0,0,0.50);
+    border-color: #FFFFFF;
+    width: 150px;
+    height: 50px;
+    line-height: 45px;
+    font-size: 14px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#about .button&gt;a:hover{
+    background-color: #FFFFFF;
+    color: #000000;
+}
+
+#galeria h2{
+    text-align: center;
+    color: #000000;
+    font-family: &quot;Open Sans&quot;;
+    font-weight: 700;
+    font-style: normal;
+    font-size: 48px;
+    margin: 0;
+}
+
+#galeria table{
+    max-width: 100%;
+    width: 1100px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#galeria td{
+    width: 33%;
+    padding: 5px;
+}
+
+img{
+    margin-left: auto;
+    margin-right: auto;
+    aspect-ratio: auto 307 / 307;
+}
+
+#galeria img{
+    width: 100%; 
+}
+
+.button2{
+    display: flex;
+    flex-wrap: wrap;
+    align-content: center;
+    align-self: stretch;
+    align-items: center;
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-top: 15px;
+}
+
+.button2&gt;a{
+    background-color: #FFFFFF;
+    color: #000000; 
+    border: 2px solid #000000;
+    width: 150px;
+    height: 50px;
+    line-height: 45px;
+    font-size: 14px;
+    margin-left: auto;
+    margin-right: auto;    
+    display: inline-block;
+    transition: background-color 500ms linear 0ms, color 500ms linear 0ms;
+    box-sizing: border-box;
+    text-decoration: none;
+    border-radius: 0px;
+    font-family: &quot;Open Sans&quot;;
+    text-align: center;
+}
+
+.button2&gt;a:hover{
+    background-color: #000000;
+    color: #FFFFFF;
+}
+
+footer{
+    clear: both;
+    table-layout: fixed;
+    display: table;
+    text-align: center;
+    width: 100%;
+    background-color: #000000;
+    background-image: none;
+    box-sizing: border-box;
+    margin-top: 2%;
+    color: aqua;
+}
+
+        </code>
+    </pre>
+
+    <footer>Made by Kacper Chamala</footer>
+    <script>hljs.highlightAll();</script>
+
+
+</body>
+</html>
